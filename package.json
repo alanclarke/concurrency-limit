@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "standard && nyc --reporter=lcov --reporter=text-summary ava",
+    "test": "standard && nyc ava",
     "lint": "standard",
     "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
@@ -16,7 +16,9 @@
   "dependencies": {},
   "devDependencies": {
     "ava": "^3.4.0",
-    "nyc": "^15.0.0"
+    "coveralls": "^3.0.9",
+    "nyc": "^15.0.0",
+    "standard": "^14.3.1"
   },
   "repository": {
     "type": "git",
@@ -31,7 +33,6 @@
   },
   "homepage": "https://github.com/alanclarke/concurrency-limit#readme",
   "nyc": {
-    "exclude": [],
     "check-coverage": true,
     "lines": 100,
     "statements": 100,
