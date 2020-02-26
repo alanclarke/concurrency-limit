@@ -1,5 +1,5 @@
 {
-  "name": "concurrency-limit",
+  "name": "limit-concurrency",
   "version": "1.0.0",
   "description": "Applies a concurrency limit to your function",
   "main": "index.js",
@@ -22,16 +22,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alanclarke/concurrency-limit.git"
+    "url": "git+https://github.com/alanclarke/limit-concurrency.git"
   },
   "keywords": [
-    "concurrency-limit",
+    "limit-concurrency",
     "concurrency"
   ],
   "bugs": {
-    "url": "https://github.com/alanclarke/concurrency-limit/issues"
+    "url": "https://github.com/alanclarke/limit-concurrency/issues"
   },
-  "homepage": "https://github.com/alanclarke/concurrency-limit#readme",
+  "homepage": "https://github.com/alanclarke/limit-concurrency#readme",
   "nyc": {
     "check-coverage": true,
     "lines": 100,
