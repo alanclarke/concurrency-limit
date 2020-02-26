@@ -19,10 +19,10 @@ Applies a concurrency limit to your function
 
 ```js
 ;(async () => {
-  const concurrencyLimit = require('limit-concurrency')
+  const limitConcurrency = require('limit-concurrency')
   const limit = 2
 
-  const limited = concurrencyLimit(fn, limit /* defauts to 1 */)
+  const limited = limitConcurrency(fn, limit /* defauts to 1 */)
 
   // Will only call 2 at a time
   await Promise.all([
