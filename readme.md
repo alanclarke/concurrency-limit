@@ -4,7 +4,7 @@
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 
 
-# Concurrency limit
+# Limit Concurrency
 
 Applies a concurrency limit to your function
 
