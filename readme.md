@@ -1,6 +1,6 @@
-[![Travis CI](https://travis-ci.org/alanclarke/concurrency-limit.svg?branch=master)](https://travis-ci.org/alanclarke/concurrency-limit)
-[![dependencies Status](https://david-dm.org/alanclarke/concurrency-limit/status.svg)](https://david-dm.org/alanclarke/concurrency-limit)
-[![Coverage Status](https://coveralls.io/repos/github/alanclarke/concurrency-limit/badge.svg?branch=master)](https://coveralls.io/github/alanclarke/concurrency-limit?branch=master)
+[![Travis CI](https://travis-ci.org/alanclarke/limit-concurrency.svg?branch=master)](https://travis-ci.org/alanclarke/limit-concurrency)
+[![dependencies Status](https://david-dm.org/alanclarke/limit-concurrency/status.svg)](https://david-dm.org/alanclarke/limit-concurrency)
+[![Coverage Status](https://coveralls.io/repos/github/alanclarke/limit-concurrency/badge.svg?branch=master)](https://coveralls.io/github/alanclarke/limit-concurrency?branch=master)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 
 
@@ -13,13 +13,13 @@ Applies a concurrency limit to your function
 
 ## Installation
 
-`npm install concurrency-limit`
+`npm install limit-concurrency`
 
 ## Usage
 
 ```js
 ;(async () => {
-  const concurrencyLimit = require('concurrency-limit')
+  const concurrencyLimit = require('limit-concurrency')
   const limit = 2
 
   const limited = concurrencyLimit(fn, limit /* defauts to 1 */)

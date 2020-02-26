@@ -1,7 +1,7 @@
 const promisify = (fn) => (...args) => new Promise(resolve => resolve(fn(...args)))
-const inputError = new Error('concurrency-limit expects an integer greater than zero')
+const inputError = new Error('limit-concurrency expects an integer greater than zero')
 
-module.exports = function concurrencyLimit (fn, n = 1) {
+module.exports = function limitConcurrency (fn, n = 1) {
   if ((typeof n !== 'number') || isNaN(n) || n < 1) throw inputError
 
   let active = 0
