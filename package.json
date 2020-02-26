@@ -1,0 +1,41 @@
+{
+  "name": "concurrency-limit",
+  "version": "1.0.0",
+  "description": "Applies a concurrency limit to your function",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "standard && nyc --reporter=lcov --reporter=text-summary ava",
+    "lint": "standard",
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
+  },
+  "author": "Alan Clarke",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "ava": "^3.4.0",
+    "nyc": "^15.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alanclarke/concurrency-limit.git"
+  },
+  "keywords": [
+    "concurrency-limit",
+    "concurrency"
+  ],
+  "bugs": {
+    "url": "https://github.com/alanclarke/concurrency-limit/issues"
+  },
+  "homepage": "https://github.com/alanclarke/concurrency-limit#readme",
+  "nyc": {
+    "exclude": [],
+    "check-coverage": true,
+    "lines": 100,
+    "statements": 100,
+    "functions": 100,
+    "branches": 100
+  }
+}
