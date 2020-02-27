@@ -22,17 +22,17 @@ Applies a concurrency limit to your function
   const limitConcurrency = require('limit-concurrency')
   const limit = 2
 
-  const limited = limitConcurrency(fn, limit /* defauts to 1 */)
+  const limitedFn = limitConcurrency(fn, limit /* defauts to 1 */)
 
   // Will only call 2 at a time
   await Promise.all([
-    limited(),
-    limited(),
-    limited(),
-    limited()
+    limitedFn(),
+    limitedFn(),
+    limitedFn(),
+    limitedFn()
   ])
 
   // Respects input arguments and return values
-  console.log(await limited(1, 2, 3) === await fn(1, 2, 3)) // true
+  console.log(await limitedFn(1, 2, 3) === await fn(1, 2, 3)) // true
 })()
 ```
