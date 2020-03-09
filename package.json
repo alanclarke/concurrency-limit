@@ -11,7 +11,7 @@
     "lint": "standard",
     "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
-  "author": "Alan Clarke",
+  "author": "Alan Clarke <code@alz.io> (alz.io)",
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
